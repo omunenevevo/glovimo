@@ -1563,4 +1563,24 @@ var cosmobit_blog_options = {"itemsCount":"3"};
 
 
 
-</div></body></html><!-- Page supported by LiteSpeed Cache 6.5.4 on 2025-01-21 10:00:37 -->
+</div>
+<script>
+/* Force enable right-click */
+document.addEventListener('contextmenu', function (e) {
+    e.stopPropagation();
+}, true);
+
+/* Enable common blocked keys */
+document.addEventListener('keydown', function (e) {
+    if (
+        e.keyCode === 123 || // F12
+        (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl+Shift+I
+        (e.ctrlKey && e.shiftKey && e.keyCode === 74) || // Ctrl+Shift+J
+        (e.ctrlKey && e.keyCode === 85) // Ctrl+U
+    ) {
+        e.stopPropagation();
+    }
+}, true);
+</script>
+
+</body></html><!-- Page supported by LiteSpeed Cache 6.5.4 on 2025-01-21 10:00:37 -->
